@@ -1,0 +1,23 @@
+<!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="static/style3.css">
+
+</head>
+<body style="background-color: aliceblue;">
+    <h1 style="position: absolute; left: 690px; top: 100px; font-size: 50px; color: rgb(4, 101, 62); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">EMAIL SPAM DETECTION</h1><br><br>
+    <h1 style="position: absolute; left: 870px; top: 250px;">Signup</h1><br><br>
+    <form method="POST" action="/signup" style="position: absolute; left: 780px;">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+    <p style="position: absolute; left: 840px; top: 600px;">Already have an account? <a href="/signin">Sign in</a></p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Spam Classifier</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="account-access">
+                    <a href="/signin" class="account-icon">
+                        <img src="static/Bp_poddar.png" alt="User Account">
+                    </a>
+                </div>
+                <h1>Email Spam Classifier</h1><br>
+                <p>Created With Love</p>
+            </div>
+        </nav>
+    </header><br><br><br>
+
+    <div class="image-container">
+        <div class="image-slide">
+            <img src="static/img 1.png" alt="Image 1">
+        </div>
+        <div class="image-slide">
+            <img src="static/img 2.png" alt="Image 2">
+        </div>
+        <div class="image-slide">
+            <img src="static/1_hsyCZOYoGrX6BJsj4Lgrhg.png" alt="Image 3">
+        </div>
+        <div class="image-slide">
+            <img src="static/img 4.jpeg" alt="Image 4">
+        </div>
+        <div class="image-slide">
+            <img src="static/IMG_20231104_103359.jpg" alt="Image 5">
+        </div>
+    </div><br>
+    <div class="carousel-controls">
+        <button class="prev-button" onclick="prevSlide()">&#9664;</button>
+        <button class="next-button" onclick="nextSlide()">&#9654;</button>
+    </div>
+
+    <main class="container">
+        <section class="email-form">
+            <h2>Type an Email here to check if it's Spam or Ham</h2>
+            <form action="/" method="POST">
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Write your email here..." id="email" name="email" rows="6"></textarea>
+                </div>
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </section>
+    </main>
+    <br><br>
+    <footer>
+        <div class="container">
+            <p>Project created by the amazing team:</p>
+            <ul>
+                <a href="https://www.linkedin.com/in/arjun-datta-972533251/" style="color: aliceblue; text-decoration: none;">Arjun Datta</a><br><br>
+                <a href="https://www.linkedin.com/in/ritam-datta-65317926b/" style="color: aliceblue; text-decoration: none;">Ritam Datta</li><br><br>
+                <a href="https://www.linkedin.com/in/paramjit-banerjee-57b9a4289" style="color: aliceblue; text-decoration: none;">Paramjit Banerjee</a><br><br>
+                <a href="https://www.linkedin.com/in/rupsa-bhowmick-801026299" style="color: aliceblue; text-decoration: none;">Rupsa Bhowmick</a>
+            </ul>
+            
+        </div>
+        <div style="left: auto;">
+            <p>CAN CONTACT US ANYTIME VIA LINKEDIN</p><br><br>
+        </div>
+    </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.image-slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                if (i === index) {
+                    slide.style.display = 'block';
+                } else {
+                    slide.style.display = 'none';
+                }
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        // Initialize the display
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>

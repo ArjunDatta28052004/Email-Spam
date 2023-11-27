@@ -1,0 +1,171 @@
+/* Reset some default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply styles to the header */
+header {
+    background-color: #212121;
+    color: #fff;
+    text-align:center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* Apply styles to the main container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Apply styles to the email form */
+.email-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+/* Add hover effect to the email form */
+.email-form:hover {
+    transform: scale(1.02);
+}
+
+.email-form h2 {
+    font-size: 1.5rem;
+}
+
+/* Apply styles to the text area and button */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #ff0011;
+}
+
+/* Apply a background with animation */
+body {
+    background-color: rgb(254, 254, 254);    
+    background-size: 400% 400%;
+    
+}
+
+
+/* Apply styles to the image slides */
+.image-slide {
+    display: none;
+    max-width: 100%;
+    text-align: center;
+}
+
+.image-slide img {
+    width: 100%; /* Set the width to 100% for uniform size */
+    max-height: 300px; /* Adjust the max-height as needed */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply styles to the carousel controls */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.2s;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #ff0011;
+}
+
+/* Style the circular account access section */
+.account-access {
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+.account-icon {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 80px;
+    height: 80px;
+    border-radius: 40%;
+    background-color: #151213;
+    cursor: pointer;
+}
+
+.account-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make the image circular */
+}
+/* Your existing CSS styles */
+
+/* Style the footer section */
+footer {
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Padding to provide spacing within the footer */
+    text-align: center; /* Center-align the text content */
+}
+
+footer p {
+    font-size: 18px; /* Set the font size for the main paragraph */
+    margin-bottom: 10px; /* Add margin below the main paragraph */
+}
+
+footer ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding for the list */
+}
+
+footer li {
+    font-size: 16px; /* Set the font size for list items */
+    margin: 5px 0; /* Add margin between list items */
+}
+
